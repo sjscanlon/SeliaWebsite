@@ -13,18 +13,125 @@
   <title>Selia</title>
 </head>
 <body>
-  <!--Main Banner-->
-  <h1>Selia</h1>
+
+  <!-- Navbar on Homepage-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Selia</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   
-  <!--Lists-->
-  <ul>
-    <li>Continents</li>
-    <li>Cities</li>
-    <li>Campaigns</li>
-    <li>Player Characters</li>
-  </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <!-- List of Cities Dropdown-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Cities
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <!-- Cities Columns, seperated every 10 cities-->
+            <div class="d-md-flex align-items-start justify-content-start">
+
+              <div>
+                <a class="dropdown-item" href="#">Aardeniil</a>
+                <a class="dropdown-item" href="#">Arnhem</a>
+                <a class="dropdown-item" href="#">Chicungo</a>
+                <a class="dropdown-item" href="#">Den'Then</a>
+                <a class="dropdown-item" href="#">Dreg</a>
+                <a class="dropdown-item" href="#">Drenz'Il</a>
+                <a class="dropdown-item" href="#">Erador</a>
+                <a class="dropdown-item" href="#">Fellrun</a>
+                <a class="dropdown-item" href="#">Haroza</a>
+                <a class="dropdown-item" href="#">Izzan</a>
+                <a class="dropdown-item" href="#">Karn</a>
+              </div>
+
+              <div>
+                <a class="dropdown-item" href="#">Karthos</a>
+                <a class="dropdown-item" href="#">Karzann</a>
+                <a class="dropdown-item" href="#">Khal Dorin</a>
+                <a class="dropdown-item" href="#">Khouka</a>
+                <a class="dropdown-item" href="#">Kirkwall</a>
+                <a class="dropdown-item" href="#">Loxodon</a>
+                <a class="dropdown-item" href="#">Moobo</a>
+                <a class="dropdown-item" href="#">Neverwinter</a>
+                <a class="dropdown-item" href="#">Orog'Nu</a>
+                <a class="dropdown-item" href="#">Oz'Grel</a>
+                <a class="dropdown-item" href="#">Phandelver</a>
+              </div>
+
+              <div>
+                <a class="dropdown-item" href="#">Rotheheim</a>
+                <a class="dropdown-item" href="#">Scalethorn</a>
+                <a class="dropdown-item" href="#">Sharn</a>
+                <a class="dropdown-item" href="#">Shiston</a>
+                <a class="dropdown-item" href="#">Temisroy</a>
+                <a class="dropdown-item" href="#">Thundertree</a>
+                <a class="dropdown-item" href="#">Zaterun</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- List of Adventurers Dropdown-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Adventurers
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <!-- Adventurer Columns, seperated by groups-->
+            <div class="d-md-flex align-items-start justify-content-start">
+
+              <div>
+                <div class="dropdown-header">The Beginning</div>
+                <a class="dropdown-item" href="#">Aesir</a>
+                <a class="dropdown-item" href="#">Broxgar</a>
+                <a class="dropdown-item" href="#">Deckard</a>
+                <a class="dropdown-item" href="#">Galgrun</a>
+                <a class="dropdown-item" href="#">Imrik</a>
+                <a class="dropdown-item" href="#">Sarnelis</a>
+                <a class="dropdown-item" href="#">Twilight</a>
+              </div>
+
+              <div>
+                <div class="dropdown-header">The Unhinged</div>
+                <a class="dropdown-item" href="#">Artoris</a>
+                <a class="dropdown-item" href="#">Bingles Cobnabbit</a>
+                <a class="dropdown-item" href="#">Doctor</a>
+                <a class="dropdown-item" href="#">Mokerian</a>
+                <a class="dropdown-item" href="#">Obsidian</a>
+                <a class="dropdown-item" href="#">Tynus</a>
+              </div>
+
+              <div>
+                <div class="dropdown-header">Final Hope A/G</div>
+                <a class="dropdown-item" href="#">Kro</a>
+                <a class="dropdown-item" href="#">Kyrillin</a>
+                <a class="dropdown-item" href="#">Philius</a>
+                <a class="dropdown-item" href="#">Vergil</a>
+              </div>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Search Bar and Submit Button-->
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Map of Il'Dyneth-->
   
   <!-- Bootstrap Javascript-->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
